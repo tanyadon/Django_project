@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello world</title>
+<h1 align="center">Model Sale</h1>
+    <div>
+        <table border="1" align="center" cellpadding="20">
+            <tr text-size="24">
+                <th>№</th>
+                <th>Name product</th>
+                <th>Quantity product</th>
+                <th>Price product</th>
+                <th>Date sale</th>
+                <th>Name salesman</th>
+            </tr>
+            {% for obj in object_list %}
+            <tr>
+                <th>{{ obj.id }}</th>
+                <th>{{ obj.Sale_NamePr }}</th>
+                <th>{{ obj.Sale_QuantityPr }}</th>
+                <th>{{ obj.Sale_PricePr }}</th>
+                <th>{{ obj.Sale_Date }}</th>
+                <th>{{ obj.Sale_NameSalesman }}</th>
+            </tr>
+            {% endfor %}
+        </table>
+    </div>
+</head>
+<body>
+
+</body>
+</html>
